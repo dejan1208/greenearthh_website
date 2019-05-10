@@ -1,0 +1,389 @@
+/* Variables */
+$darkblue :#0000CD ;
+$pad_left: 1rem;
+$gray: #808080;
+$very_dark_blue: #00008B;
+$aqua: #00FFFF;
+
+
+
+
+
+body{
+  font-family: 'Roboto';
+  .bold{
+    font-weight: bolder;
+  }
+  a{
+    text-decoration: none;
+    &:visited{
+      color: $darkblue;
+    }
+  }
+}
+
+header{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  .logo{
+    img{
+      width: 3rem;
+      padding-left: $pad_left;
+    }
+  }
+
+  .text{
+    margin-left: 60%;
+    img{
+      width: 1rem;
+    }
+  }
+
+  .menu-links{
+    list-style-type: none;
+    .menu-link{
+      display: inline;
+      margin-right: 10%;
+      &:last-child{
+        margin-right: 0;
+      }
+      
+    }
+  }
+}
+
+main{
+
+  .img-block{
+    background-image: url('../img/beach.jpg');
+    color: white;
+    padding: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    button{
+      background: $darkblue;
+      color: white;
+      text-align: center;
+      margin-bottom: 1rem;
+      a{
+        color: white;
+      }
+    }  
+    h4{
+      margin: 1rem;
+    }
+  }
+
+  #info{
+    padding-top: 0.5rem;
+    
+    h2{
+      color: $darkblue;
+      text-align: center;
+      
+    }
+    h3, p{
+      color: $very_dark_blue;
+      text-align: left;
+    }
+    p{
+
+      &:first-child{
+        color: $gray;
+        text-align: center;
+      }
+    }
+    article{
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      img{
+        width: 2rem;
+        margin-top: 1rem;
+        padding: 1rem 1rem;
+        border: 1px solid #D3D3D3;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  #about{
+    background-color: $darkblue;
+    h2{
+      color: white;
+      text-align: center;
+      padding-top: 3.5rem;
+      &:last-child{
+        color: $darkblue;
+      }
+    }
+    .offers{
+      .offer{
+        margin-bottom: 2.5rem;
+        .offer-image{
+          margin-left: 2.5rem;
+          margin-right: 2.5rem;
+          position:relative;
+          .image-text{
+            position: absolute;
+            top: 2rem;
+            left: 1rem;
+            width: 60%;
+            height: 4.5rem;
+            h4{
+              background: yellow;
+              color: $darkblue;
+            }
+          }
+        }
+        .offer-details{
+          margin-left: 2.5rem;
+          margin-right: 2.5rem;
+          background: white;
+          margin-top: -7%;
+
+          h3{
+            padding: 1rem;
+            color: $very_dark_blue;
+            &:last-child{
+              padding-top: 0;
+              color: $darkblue;
+            }
+          }
+        }
+      }
+    }
+    .more-offers{
+      background: white;
+      color: $darkblue;
+      text-align: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      .bold{
+        border-bottom: 1px dashed $darkblue;
+      }
+    }
+    .membership{
+      text-align: center;
+      background: $very_dark_blue;
+      padding-bottom: 5rem;
+
+      h2, h4{
+        color: $aqua;
+        padding-top: 0;
+      }
+
+      h4{
+        border-bottom: 1px dashed $aqua;
+      }
+
+      p{
+        color: white;
+        &:first-child{
+          padding-top: 1rem;
+        }
+      }
+      .mebership-offer{
+        background: white;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 3rem;
+        img{
+          margin-top: 2rem;
+        }
+        h3{
+          color: $darkblue;
+        }
+        .membership-offer_comfort{
+          display: grid;
+          grid-template-columns: 30% 70%;
+          i{
+            padding-top: 1rem;
+          }
+          p{
+            color: black;
+            padding-top: -10%;
+          }
+          .gray{
+            color: #D3D3D3;
+          }
+        }
+      }
+    }
+    
+  }
+
+  #contact{
+    
+    .subscribe{
+      text-align: center;
+      background: $darkblue;
+      h2{
+        color: white;
+      }
+      input{
+        display: block;
+        margin-left: 10%;
+        width: 75%;
+        height: 3rem;
+        &::placeholder{
+          color: $gray;
+          font-size: 1rem;
+        }
+      }
+      button{
+        margin-top: 2.5rem;
+        width: 50%;
+        height: 3rem;
+        margin-bottom: 2.5rem;
+
+        h3{
+          color: $darkblue;
+        }
+
+      }
+
+    }
+  }
+}
+
+footer{
+  text-align: center;
+  h3{
+    color: $darkblue;
+  }
+
+  h5{
+    color: $gray;
+  }
+
+  .social{
+    i{
+      margin: 1rem;
+      color: $darkblue;
+      
+    }
+  }
+
+  .payment{
+    i{
+      margin-top: 2rem;
+      margin-left: 0.5rem;
+      color: $gray;
+    }
+  }
+
+  .aqua{
+    width: 100%;
+    height: 0.7rem;
+    background: $aqua;
+  }
+  
+}
+
+
+/* Media query */
+
+@mixin tablet {
+  @media screen and  (min-width:768px) and(max-width: 1200px){
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and  (min-width:1201px){
+    @content;
+  }
+}
+
+
+@include tablet{
+  nav{
+    display: grid;
+    grid-template-areas: 'menu' 'section';
+
+    section{
+      grid-area: section;
+      margin-top: -2.3rem;
+    }
+    .menu-links{
+      grid-area: menu;
+      margin-left: -20%;
+      margin-top: 5%;
+    }
+  }
+  #info{
+    .grid{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+  }
+
+  .offers{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .membership{
+
+    div{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  #contact{
+   
+    button{
+      margin-left: -5%;
+    }
+  }
+
+  
+}
+
+@include laptop{
+  nav{
+    display: grid;
+    grid-template-areas: 'menu' 'section';
+    
+    section{
+      grid-area: section;
+      margin-top: -2.5rem;
+    }
+    .menu-links{
+      grid-area: menu;
+      margin-left: -20%;
+      margin-top: 2rem;
+    }
+  }
+  #info{
+    .grid{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      h3,p{
+        margin-left: -5%;
+      }
+    }
+  }
+  .offers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .membership{
+
+    div{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  #contact{
+    button{
+      margin-left: -5%;
+    }
+  }
+}
+

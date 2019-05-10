@@ -1,0 +1,286 @@
+/* Variables */
+body {
+  font-family: 'Roboto'; }
+  body .bold {
+    font-weight: bolder; }
+  body a {
+    text-decoration: none; }
+    body a:visited {
+      color: #0000CD; }
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr; }
+  header .logo img {
+    width: 3rem;
+    padding-left: 1rem; }
+  header .text {
+    margin-left: 60%; }
+    header .text img {
+      width: 1rem; }
+  header .menu-links {
+    list-style-type: none; }
+    header .menu-links .menu-link {
+      display: inline;
+      margin-right: 10%; }
+      header .menu-links .menu-link:last-child {
+        margin-right: 0; }
+
+main .img-block {
+  background-image: url("../img/beach.jpg");
+  color: white;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%; }
+  main .img-block button {
+    background: #0000CD;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem; }
+    main .img-block button a {
+      color: white; }
+  main .img-block h4 {
+    margin: 1rem; }
+
+main #info {
+  padding-top: 0.5rem; }
+  main #info h2 {
+    color: #0000CD;
+    text-align: center; }
+  main #info h3, main #info p {
+    color: #00008B;
+    text-align: left; }
+  main #info p:first-child {
+    color: #808080;
+    text-align: center; }
+  main #info article {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr; }
+    main #info article img {
+      width: 2rem;
+      margin-top: 1rem;
+      padding: 1rem 1rem;
+      border: 1px solid #D3D3D3;
+      border-radius: 50%; }
+
+main #about {
+  background-color: #0000CD; }
+  main #about h2 {
+    color: white;
+    text-align: center;
+    padding-top: 3.5rem; }
+    main #about h2:last-child {
+      color: #0000CD; }
+  main #about .offers .offer {
+    margin-bottom: 2.5rem; }
+    main #about .offers .offer .offer-image {
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+      position: relative; }
+      main #about .offers .offer .offer-image .image-text {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        width: 60%;
+        height: 4.5rem; }
+        main #about .offers .offer .offer-image .image-text h4 {
+          background: yellow;
+          color: #0000CD; }
+    main #about .offers .offer .offer-details {
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+      background: white;
+      margin-top: -7%; }
+      main #about .offers .offer .offer-details h3 {
+        padding: 1rem;
+        color: #00008B; }
+        main #about .offers .offer .offer-details h3:last-child {
+          padding-top: 0;
+          color: #0000CD; }
+  main #about .more-offers {
+    background: white;
+    color: #0000CD;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+    main #about .more-offers .bold {
+      border-bottom: 1px dashed #0000CD; }
+  main #about .membership {
+    text-align: center;
+    background: #00008B;
+    padding-bottom: 5rem; }
+    main #about .membership h2, main #about .membership h4 {
+      color: #00FFFF;
+      padding-top: 0; }
+    main #about .membership h4 {
+      border-bottom: 1px dashed #00FFFF; }
+    main #about .membership p {
+      color: white; }
+      main #about .membership p:first-child {
+        padding-top: 1rem; }
+    main #about .membership .mebership-offer {
+      background: white;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-top: 3rem; }
+      main #about .membership .mebership-offer img {
+        margin-top: 2rem; }
+      main #about .membership .mebership-offer h3 {
+        color: #0000CD; }
+      main #about .membership .mebership-offer .membership-offer_comfort {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 30% 70%;
+        grid-template-columns: 30% 70%; }
+        main #about .membership .mebership-offer .membership-offer_comfort i {
+          padding-top: 1rem; }
+        main #about .membership .mebership-offer .membership-offer_comfort p {
+          color: black;
+          padding-top: -10%; }
+        main #about .membership .mebership-offer .membership-offer_comfort .gray {
+          color: #D3D3D3; }
+
+main #contact .subscribe {
+  text-align: center;
+  background: #0000CD; }
+  main #contact .subscribe h2 {
+    color: white; }
+  main #contact .subscribe input {
+    display: block;
+    margin-left: 10%;
+    width: 75%;
+    height: 3rem; }
+    main #contact .subscribe input::-webkit-input-placeholder {
+      color: #808080;
+      font-size: 1rem; }
+    main #contact .subscribe input:-ms-input-placeholder {
+      color: #808080;
+      font-size: 1rem; }
+    main #contact .subscribe input::-ms-input-placeholder {
+      color: #808080;
+      font-size: 1rem; }
+    main #contact .subscribe input::placeholder {
+      color: #808080;
+      font-size: 1rem; }
+  main #contact .subscribe button {
+    margin-top: 2.5rem;
+    width: 50%;
+    height: 3rem;
+    margin-bottom: 2.5rem; }
+    main #contact .subscribe button h3 {
+      color: #0000CD; }
+
+footer {
+  text-align: center; }
+  footer h3 {
+    color: #0000CD; }
+  footer h5 {
+    color: #808080; }
+  footer .social i {
+    margin: 1rem;
+    color: #0000CD; }
+  footer .payment i {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    color: #808080; }
+  footer .aqua {
+    width: 100%;
+    height: 0.7rem;
+    background: #00FFFF; }
+
+/* Media query */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  nav {
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas: 'menu' 'section'; }
+    nav section {
+      grid-area: section;
+      margin-top: -2.3rem; }
+    nav .menu-links {
+      grid-area: menu;
+      margin-left: -20%;
+      margin-top: 5%; }
+  #info .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%; }
+  .offers {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%; }
+  .membership div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr); }
+  #contact button {
+    margin-left: -5%; } }
+
+@media screen and (min-width: 1201px) {
+  nav {
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas: 'menu' 'section'; }
+    nav section {
+      grid-area: section;
+      margin-top: -2.5rem; }
+    nav .menu-links {
+      grid-area: menu;
+      margin-left: -20%;
+      margin-top: 2rem; }
+  #info .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%; }
+    #info .grid h3, #info .grid p {
+      margin-left: -5%; }
+  .offers {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr); }
+  .membership div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr); }
+  #contact button {
+    margin-left: -5%; }
+  nav section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  nav .menu-links {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; } }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  nav section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  nav .menu-links {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+  nav section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  nav .menu-links {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; } }
+
+@media screen and (min-width: 1201px) {
+  nav section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  nav .menu-links {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; } }
